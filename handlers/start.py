@@ -36,7 +36,7 @@ async def start_(client: Client, message: Message):
 
 
 
-<
+
 
 
   
@@ -58,10 +58,10 @@ async def start(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "✨ 𝘾𝙝𝙖𝙩𝙩𝙞𝙣𝙜 𝙜𝙧𝙤𝙪𝙥", url=f"https://t.me/https://t.me/INDIAN_NETWORK_OP"
+                        "𝐆𝐑𝐎𝐔𝐏", url=f"https://t.me/https://t.me/INDIAN_NETWORK_OP"
                     ),
                     InlineKeyboardButton(
-                        "📣 𝙘𝙝𝙖𝙣𝙣𝙚𝙡", url=f"https://t.me/its_akku_about"
+                        "𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=f"https://t.me/INDIAN_NETWORK_OFFICIAL"
                     )
                 ]
             ]
@@ -92,40 +92,11 @@ async def help_(client: Client, message: Message):
     await message.reply_text(
         f"""<b>💡 Hello {message.from_user.mention} welcome to the help menu !</b>
 
-**in this menu you can open several available command menus, in each command menu there is also a brief explanation of each command**
 
-⚡ __Powered by {BOT_NAME} Badnam__""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "⚡ 𝘽𝙖𝙨𝙞𝙘 𝙐𝙨𝙚", callback_data="cbbasic"
-                    ),
-                    InlineKeyboardButton(
-                        "❣️ 𝘼𝙙𝙫𝙖𝙣𝙘𝙚 𝙐𝙨𝙚", callback_data="cbadvanced"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "😏 𝘼𝙙𝙢𝙞𝙣 𝙐𝙨𝙚", callback_data="cbadmin"
-                    ),
-                    InlineKeyboardButton(
-                        "⏲️ 𝙎𝙪𝙙𝙤 𝙐𝙨𝙚", callback_data="cbsudo"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "🙂 𝙊𝙬𝙣𝙚𝙧 𝙐𝙨𝙚", callback_data="cbowner"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "😍 𝙁𝙪𝙣 𝙐𝙨𝙚", callback_data="cbfun"
-                    )
-                ]
-            ]
-        )
-    )
+
+
+
+
 
 
 @Client.on_message(command(["ping", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
