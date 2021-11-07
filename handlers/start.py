@@ -33,44 +33,18 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""<b>✨ **𝐁𝐡𝐞𝐥𝐜𝐨𝐦𝐞 {message.from_user.first_name}** \n
-💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) 𝗮𝗹𝗹𝗼𝘄 𝘆𝗼𝘂 𝘁𝗼 𝗽𝗹𝗮𝘆 𝗺𝘂𝘀𝗶𝗰 𝗼𝗻 𝗴𝗿𝗼𝘂𝗽𝘀 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝘁𝗵𝗲 𝗻𝗲𝘄 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺'𝘀 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁𝘀 𝐩𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝐁𝐚𝐝𝐧𝐚𝐦!**
 
-💡 **𝗙𝗶𝗻𝗱 𝗼𝘂𝘁 𝗮𝗹𝗹 𝘁𝗵𝗲 𝗕𝗼𝘁'𝘀 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗮𝗻𝗱 𝗵𝗼𝘄 𝘁𝗵𝗲𝘆 𝘄𝗼𝗿𝗸 𝗯𝘆 𝗰𝗹𝗶𝗰𝗸𝗶𝗻𝗴 𝗼𝗻 𝘁𝗵𝗲 » 📚 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗯𝘂𝘁𝘁𝗼𝗻 !**
 
-❓ **𝗙𝗼𝗿 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝗮𝗯𝗼𝘂𝘁 𝗮𝗹𝗹 𝗳𝗲𝗮𝘁𝘂𝗿𝗲 𝗼𝗳 𝘁𝗵𝗶𝘀 𝗯𝗼𝘁, 𝗷𝘂𝘀𝘁 𝘁𝘆𝗽𝗲 /help**
-</b>""",
-        reply_markup=InlineKeyboardMarkup(
-            [ 
-                [
-                    InlineKeyboardButton(
-                        "😚 🎧 𝙁𝙚𝙚𝙡 𝙎𝙤𝙣𝙜 🎶 ✨", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
-                ],[
-                    InlineKeyboardButton(
-                        "😢 ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴍᴇ", callback_data="cbhowtouse")
-                ],[
-                    InlineKeyboardButton(
-                         "😄 ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="cbcmds"
-                    ),
-                    InlineKeyboardButton(
-                        "🔥 𝘽𝙖𝙙𝙣𝙖𝙢 💝", url=f"https://t.me/Its_Badnam_xD")
-                ],[
-                    InlineKeyboardButton(
-                        "🎌 𝙂𝙧𝙤𝙪𝙥 𝙊𝙬𝙣𝙚𝙧 🎌", url=f"https://t.me/ITZ_HEARTLESS_OWNER"
-                    ),
-                    InlineKeyboardButton(
-                        "📡𝘾𝙝𝙖𝙩𝙩𝙞𝙣𝙜 𝙎𝙚𝙧𝙫𝙚𝙧📌", url=f"https://t.me/INDIAN_NETWORK_OP")
-                ],[
-                    InlineKeyboardButton(
-                        "💝 𝘽𝙝𝙖𝙞 💝", url="https://t.me/MR_X_OP_BOLTE ")
-                ],[
-                    InlineKeyboardButton(
-                        "💥 𝘾𝙤𝙙𝙚'𝙨 💫", url="https://github.com/BadnamOp/Badnam_Vc_Player"
-                    )
-                ]
-            ]
-        ),
-     disable_web_page_preview=True
-    )
+
+<
+
+
+  
+
+                        
+
+     
+   
 
 
 @Client.on_message(command(["start", f"start@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
